@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html ng-app="universidadApp">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 04</title>
+
+    <link rel="stylesheet" href="./../bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./../bower_components/animate.css/animate.css">
+    <script src="./../bower_components/angular/angular.min.js"></script>
+    <script src="./js/app.js"></script>
+    <style>
+        .avatar{
+            width: 75px;
+            height: 75px;
+        }
+        .pointer{
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container" ng-controller="listadoCtrl">
+        <h1>ng-options</h1>
+        <h4>Repeticioens para elementos de select</h4>
+        <hr>
+    
+        <div class="row justify-content-md-center">
+            <div class="col-10">
+
+                Seleccione el País-1: <code>{{ paisSeleccionado }}</code>
+                <select ng-model="paisSeleccionado" class="form-control">
+                    <option value="">Seleccione</option>
+                    <option value="{{ pais.id }}" ng-repeat="pais in paises">{{ pais.nombre }}</option>
+                </select>
+
+                Seleccione el País-2: <code>{{ paisSeleccionado2 }}</code>
+                <select ng-model="paisSeleccionado2" class="form-control" ng-options="pais.id as pais.nombre for pais in paises">
+                    <option value="">Seleccione</option>
+                </select>
+
+            </div>
+        </div>
+    </div>
+</body>
+</html>
