@@ -8,17 +8,21 @@ app.controller("profesorCtrl", ["$scope", function($scope){
         foto: "img/juancarlos.jpg"
     };
     $scope._profesor = {};
+    $scope.mostrarCaja = false;
 
     $scope.editarProfesor = function(){
         $scope._profesor = angular.copy($scope.profesor);
+        $scope.mostrarCaja = true;
     };
 
     $scope.guardarProfesor = function(){
         $scope.profesor = angular.copy($scope._profesor);
         $scope._profesor = {};
+        $scope.mostrarCaja = false;
     };
 
     $scope.cancelarProfesor = function(){
         $scope._profesor = {};
+        $scope.mostrarCaja = false;
     };
 }]);
