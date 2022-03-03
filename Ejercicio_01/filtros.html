@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html ng-app>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 01</title>
+
+    <link rel="stylesheet" href="./../bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <script src="./../bower_components/angular/angular.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Filtros :: Filters</h1>
+        <h4>en AngularJS</h4>
+        <hr>
+
+        <code>
+            <h5>Filtros para STRINGs</h5>
+            <ul>
+                <li>Sin Filtro: {{ "MaUrO" }}</li>
+                <li>Con Uppercase: {{ "MaUrO" | uppercase }}</li>    
+                <li>Con Lowercase: {{ "MaUrO" | lowercase }}</li>
+            </ul>
+        </code>
+
+        <code>
+            <h5>Filtros para Monedas</h5>
+            <ul>
+                <li>Sin Filtro: {{ 1350 }}</li>
+                <li>Con Currency: {{ 1350 | currency }}</li>    
+                <li>Con Currency-Param: {{ 1350 | currency:"ARS " }}</li>
+            </ul>
+        </code>
+
+        <code>
+            <h5>Filtro para Números</h5>
+            <ul>
+                <li>Sin Filtro: {{ 1350000 }}</li>
+                <li>Con Number: {{ 1350000 | number }}</li>
+            </ul>
+        </code>
+        
+        
+    </div>
+</body>
+</html>
