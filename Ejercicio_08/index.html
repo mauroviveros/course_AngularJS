@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html ng-app="ejemplosApp">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 08</title>
+
+    <link rel="stylesheet" href="./../bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./../bower_components/animate.css/animate.css">
+    <script src="./../bower_components/angular/angular.min.js"></script>
+    <script src="./js/app.js"></script>
+</head>
+<body>
+    <div class="container" ng-controller="mainCtrl">
+        <h1>Detectar IPs</h1>
+        <h4>Manejo de recursos online</h4>
+        <hr>
+        <ul>
+            <li>IP: <code>{{ geo.geoplugin_request }}</code></li>
+            <li>Pais: <code>{{ geo.geoplugin_countryName }}</code></li>
+            <li>Moneda: <code>{{ geo.geoplugin_currencySymbol_UTF8 }}</code></li>
+        </ul>
+    
+        <div class="row justify-content-md-center">
+            <code>{{ geo }}</code>
+        </div>
+    </div>
+</body>
+</html>
+
+
