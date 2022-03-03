@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html ng-app>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 01</title>
+
+    <link rel="stylesheet" href="./../bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <script src="./../bower_components/angular/angular.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Evaluación</h1>
+        <h5>Angular 101</h5>
+        <hr>
+
+
+        <div class="row justify-content-md-center">
+            <div class="col-10">
+                <div class="mb-3">
+                    <label for="nombre" class="form-label">Nombre completo:</label>
+                    <input type="text" class="form-control" id="nombre" ng-model="nombre" placeholder="Ingrese su Nombre completo">
+                </div>
+                <div class="mb-3">
+                    <label for="trabajo" class="form-label">Lugar de trabajo:</label>
+                    <input type="text" class="form-control" id="trabajo" ng-model="trabajo" placeholder="Ingrese su Lugar de trabajo">
+                </div>
+                <div class="mb-3">
+                    <label for="salario" class="form-label">Salario</label>
+                    <input type="number" class="form-control" id="salario" ng-model="salario" placeholder="Ingrese su Salario">
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-md-center">
+            <div class="col-10">
+                <code>
+                    <span>Nombre completo: {{ nombre | uppercase }}</span><br>
+                    <span>Lugar de Trabajo: {{ trabajo | lowercase }} </span><br>
+                    <span>Salario: {{ salario | currency }}</span><br>
+                </code>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
