@@ -20,12 +20,43 @@
         <div class="row">
             <div class="col-10">
 
+                <h5>Array</h5><hr>
                 <ul>
                     <li ng-repeat="nombre in listado" >{{ nombre }}</li>
                 </ul>
-                
-
                 <code>{{ listado | json }}</code>
+
+                <br><br>
+
+                <h5>Array de Objetos</h5><hr>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Nombre</th>
+                            <th scope="col" class="text-center">Edad</th>
+                            <th scope="col" class="text-center">Clase</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr ng-repeat="profesor in listadoProfesores">
+                            <th scope="row">{{ $index }}</th>
+                            <td>{{ profesor.nombre }}</td>
+                            <td class="text-center">{{ profesor.edad }}</td>
+                            <td class="text-center">{{ profesor.clase }}</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <code>{{ listadoProfesores | json }}</code>
+
+                <br><br>
+
+                <ul>
+                    <li ng-repeat="numero in numeros">
+                        2 x {{ numero }} = {{ 2 * numero }}
+                    </li>
+                </ul>
+                <code>{{ numeros | json }}</code>
 
             </div>
         </div>
