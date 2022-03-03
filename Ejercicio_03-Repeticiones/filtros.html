@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html ng-app="universidadApp">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 03</title>
+
+    <link rel="stylesheet" href="./../bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./../bower_components/animate.css/animate.css">
+    <script src="./../bower_components/angular/angular.min.js"></script>
+    <script src="./js/appFiltros.js"></script>
+    <style>
+        .avatar{
+            width: 75px;
+            height: 75px;
+        };
+    </style>
+</head>
+<body>
+    <div class="container" ng-controller="listadoCtrl">
+        <h1>Filtros</h1>
+        <h4>Para el ng-repeat</h4>
+        <hr>
+    
+        <div class="row justify-content-md-center">
+            <div class="col-10">
+
+                <div class="row">
+                    <div class="mb-3">
+                        <label for="busqueda" class="form-label">Busqueda Nombre:</label>
+                        <input type="text" class="form-control" id="busqueda" ng-model="busqueda.nombre" placeholder="Ingrese el nombre que desea Buscar...">
+                    </div>
+                    <div class="mb-3">
+                        <label for="sexo" class="form-label">Sexo</label>
+                        <select name="sexo" id="sexo" ng-model="busqueda.sexo" class="form-control">
+                            <option value=""></option>
+                            <option value="mujer">Hombre</option>
+                            <option value="hombre">Mujer</option>
+                        </select>
+                    </div>
+                </div>
+
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Avatar</th>
+                            <th scope="col">Nombre</th>
+                            <th scope="col" class="text-center">Sexo</th>
+                            <th scope="col" class="text-center">Telefono</th>
+                            <th scope="col" class="text-center">Celular</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr ng-repeat="persona in personas | filter:busqueda">
+                            <th scope="row">{{ $index }}</th>
+                            <td>
+                                <img ng-src="./img/{{ persona.avatar }}" class="avatar rounded-circle">
+                            </td>
+                            <td>{{ persona.nombre }}</td>
+                            <td class="text-center">{{ persona.sexo }}</td>
+                            <td class="text-center">{{ persona.telefono }}</td>
+                            <td class="text-center">{{ persona.celular }}</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <code>{{ listadoProfesores | json }}</code>
+
+            </div>
+        </div>
+    </div>
+</body>
+</html>
