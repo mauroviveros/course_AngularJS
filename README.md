@@ -18,3 +18,5 @@ $ npm i -g bower
 ```node
 $ bower install
 ```
+
+- Use Live-server in any HTML file
