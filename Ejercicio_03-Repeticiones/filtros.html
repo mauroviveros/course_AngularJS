@@ -14,7 +14,10 @@
         .avatar{
             width: 75px;
             height: 75px;
-        };
+        }
+        .pointer{
+            cursor: pointer;
+        }
     </style>
 </head>
 <body>
@@ -46,14 +49,22 @@
                         <tr>
                             <th scope="col">#</th>
                             <th scope="col">Avatar</th>
-                            <th scope="col">Nombre</th>
-                            <th scope="col" class="text-center">Sexo</th>
-                            <th scope="col" class="text-center">Telefono</th>
-                            <th scope="col" class="text-center">Celular</th>
+                            <th scope="col">
+                                <a class="btn btn-link" ng-click="setOrderBy('columna');">Nombre</a>
+                            </th>
+                            <th scope="col" class="text-center">
+                                <a class="btn btn-link" ng-click="setOrderBy('sexo');">Sexo</a>
+                            </th>
+                            <th scope="col" class="text-center">
+                                <a class="btn btn-link" ng-click="setOrderBy('telefono');">Telefono</a>
+                            </th>
+                            <th scope="col" class="text-center">
+                                <a class="btn btn-link" ng-click="setOrderBy('celular');">Celular</a>
+                            </th>
                         </tr>
                     </thead>
                     <tbody>
-                        <tr ng-repeat="persona in personas | filter:busqueda">
+                        <tr ng-repeat="persona in personas | filter:busqueda | orderBy:columna:reverse ">
                             <th scope="row">{{ $index }}</th>
                             <td>
                                 <img ng-src="./img/{{ persona.avatar }}" class="avatar rounded-circle">
