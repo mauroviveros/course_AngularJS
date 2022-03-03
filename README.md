@@ -9,5 +9,6 @@
 ## Requirements
 
 ```node
-$ npm i generate-changelog -g
+$ npm i -g generate-changelog
+$ npm i -g bower
 ```
