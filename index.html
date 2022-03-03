@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html ng-app="app">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso AngularJS (Legacy)</title>
+
+    <link rel="stylesheet" href="./../bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./../bower_components/animate.css/animate.css">
+    <script src="./../bower_components/angular/angular.min.js"></script>
+    <script>
+        angular.module("app", []).controller("mainCtrl", ["$scope", function($scope){
+            $scope.ejercicios = [
+                {
+                    nombre: "Ejercio_01 Primeros Pasos",
+                    url: "./Ejercicio_01"
+                },
+                {
+                    nombre: "Ejercio_02 $controllers & $scope",
+                    url: "./Ejercicio_02"
+                },
+                {
+                    nombre: "Ejercio_03 Bootstrap",
+                    url: "./Ejercicio_03"
+                },
+                {
+                    nombre: "Ejercio_04 ngOptions",
+                    url: "./Ejercicio_04"
+                },
+                {
+                    nombre: "Ejercio_05 ngRepeat",
+                    url: "./Ejercicio_05"
+                },
+                {
+                    nombre: "Ejercio_06 $http Request",
+                    url: "./Ejercicio_06"
+                },
+                {
+                    nombre: "Ejercio_07 ngInclude",
+                    url: "./Ejercicio_07"
+                },
+            ]
+        }]);
+    </script>
+</head>
+<body>
+    <div class="container" ng-controller="mainCtrl">
+        <h1>AngularJS (Legacy)</h1>
+        <h4>Lista de Ejercicios</h4>
+        <hr>
+    
+        <div class="row justify-content-md-center">
+            <div class="col-10">
+                <ul>
+                    <li ng-repeat="ejercicio in ejercicios">
+                        <a href="{{ ejercicio.url }}" class="btn btn-link">{{ ejercicio.nombre }}</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
+
