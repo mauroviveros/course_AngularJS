@@ -1,0 +1,17 @@
+<table class="table">
+    <thead>
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col">Nombre</th>
+            <th scope="col" class="text-center">Sexo</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr ng-repeat="profesor in profesores">
+            <th scope="row">{{ $index }}</th>
+            <td>{{ profesor.nombre }} {{ profesor.snombre }}</td>
+            <td class="text-center">{{ persona.sexo }}</td>
+        </tr>
+    </tbody>
+</table>
+<code>{{ profesores | json }}</code>
