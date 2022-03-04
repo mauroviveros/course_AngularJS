@@ -23,13 +23,19 @@ angular.module("universidadApp").controller("alumnosCtrl", ["$scope", "$http", f
 
 angular.module("universidadApp").controller("alumnosDetailCtrl", ["$scope", "$http", "$routeParams", "$location", function($scope, $http, $routeParams, $location){
     $scope.alumno = {};
+    $scope.isNewAlumno = false;
 
-    $http.get(`http://localhost:4000/api/alumnos/${$routeParams._id}`).then(function(response){
-        $scope.alumno = response.data.data;
-        if(!$scope.alumno) $location.path('/alumnos');
-    }).catch(function(){
+    if($routeParams._id != 'nuevo'){
+        $http.get(`http://localhost:4000/api/alumnos/${$routeParams._id}`).then(function(response){
+            $scope.alumno = response.data.data;
+            if(!$scope.alumno) $location.path('/alumnos');
+        }).catch(function(){
+    
+        });
+    }else{
+        $scope.isNewAlumno = true;
+    };
 
-    });
 
     $scope.submit = function(a){
         $http.post(`http://localhost:4000/api/alumnos/${$routeParams._id}`, $scope.alumno). then(function(response){

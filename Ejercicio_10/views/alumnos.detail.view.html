@@ -6,7 +6,7 @@
     <form name="AlumnoDetailForm" ng-submit="submit();">
         <div class="mb-3">
             <label for="_id" class="form-label">_id</label>
-            <input type="text" class="form-control" id="_id" ng-model="alumno._id" placeholder="Ingrese un ID..." disabled>
+            <input type="text" class="form-control" id="_id" ng-model="alumno._id" placeholder="Ingrese un ID..." ng-disabled="!isNewAlumno">
         </div>
         
         <div class="mb-3">
@@ -23,6 +23,6 @@
             <textarea class="form-control" id="direccion" rows="4" ng-model="alumno.direccion" placeholder="Ingrese una Dirección..."></textarea>
         </div>
 
-        <input class="btn btn-success" type="submit" value="Guardar Cambios">
+        <input class="btn btn-success" type="submit" value="Guardar">
     </form>
 </div>

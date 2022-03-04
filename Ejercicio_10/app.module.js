@@ -21,6 +21,7 @@ app.config(["$routeProvider", function($routeProvider){
 
 app.filter("telefono", [function(){
     return function(number){
+        number = number || '';
         return `${number.substring(0, 4)}-${number.substring(4)}`
     }
 }]);

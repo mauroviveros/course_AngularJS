@@ -4,6 +4,11 @@
     <hr>
 
     <div class="table-responsive">
+        <div class="d-grid gap-2 d-md-block">
+        </div>
+        <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+            <a ng-href="#!/alumnos/nuevo" class="btn btn-sm btn-primary">Evaluación</a>
+        </div>
         <table class="table table-striped">
             <thead>
             <tr>
@@ -30,5 +35,5 @@
     <div class="d-grid gap-2 d-md-block">
         <button class="btn btn-primary" type="button" ng-class="{ 'disabled': hasDisabled('prev') }" ng-click="prevPage()">Anterior</button>
         <button class="btn btn-primary" type="button" ng-class="{ 'disabled': hasDisabled('next') }" ng-click="nextPage();">Siguiente</button>
-      </div>
+    </div>
 </div>
