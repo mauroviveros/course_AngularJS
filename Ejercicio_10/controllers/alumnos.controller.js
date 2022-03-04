@@ -29,9 +29,11 @@ angular.module("universidadApp").controller("alumnosDetailCtrl", ["$scope", "$ht
         if(!$scope.alumno) $location.path('/alumnos');
     }).catch(function(){
 
-    })
+    });
 
     $scope.submit = function(a){
-        $location.path('/alumnos');
+        $http.post(`http://localhost:4000/api/alumnos/${$routeParams._id}`, $scope.alumno). then(function(response){
+            $location.path('/alumnos');
+        });
     }
 }]);
