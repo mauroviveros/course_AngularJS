@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html ng-app="universidadApp">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 10</title>
+
+    <link rel="stylesheet" href="./../bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./../bower_components/animate.css/animate.css">
+    <script src="./../bower_components/angular/angular.min.js"></script>
+    <script src="./../bower_components/angular-route/angular-route.min.js"></script>
+    <script src="./app.module.js"></script>
+    <script src="./controllers/main.controller.js"></script>
+</head>
+<body ng-controller="mainCtrl">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light" ng-include="template.navbar"></nav>
+    <ng-view class="container">
+        <!-- <h1>Clima</h1>
+        <h4>Manejo de recursos online</h4>
+        <hr> -->
+    </ng-view>
+</body>
+</html>
+
+
