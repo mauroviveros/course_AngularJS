@@ -8,6 +8,10 @@ app.config(["$routeProvider", function($routeProvider){
         templateUrl: './views/alumnos.view.html',
         controller: 'alumnosCtrl'
     });
+    $routeProvider.when('/alumnos/:_id', {
+        templateUrl: './views/alumnos.detail.view.html',
+        controller: 'alumnosDetailCtrl'
+    });
     $routeProvider.when('/profesores', {
         templateUrl: './views/profesores.view.html'
     });

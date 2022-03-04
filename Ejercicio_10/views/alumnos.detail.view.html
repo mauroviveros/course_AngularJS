@@ -1,0 +1,28 @@
+<div class="container">
+    <h1>Alumno</h1>
+    <h4>{{ alumno.nombre }}</h4>
+    <hr>
+
+    <form name="AlumnoDetailForm" ng-submit="submit();">
+        <div class="mb-3">
+            <label for="_id" class="form-label">_id</label>
+            <input type="text" class="form-control" id="_id" ng-model="alumno._id" placeholder="Ingrese un ID..." disabled>
+        </div>
+        
+        <div class="mb-3">
+            <label for="nombre" class="form-label">Nombre:</label>
+            <input type="text" class="form-control" id="nombre" ng-model="alumno.nombre" placeholder="Ingrese un Nombre...">
+        </div>
+
+        <div class="mb-3">
+            <label for="telefono" class="form-label">Telefono:</label>
+            <input type="text" class="form-control" id="telefono" ng-model="alumno.telefono" placeholder="Ingrese un Telefono...">
+        </div>
+        <div class="mb-3">
+            <label for="direccion" class="form-label">Dirección:</label>
+            <textarea class="form-control" id="direccion" rows="4" ng-model="alumno.direccion" placeholder="Ingrese una Dirección..."></textarea>
+        </div>
+
+        <input class="btn btn-success" type="submit" value="Guardar Cambios">
+    </form>
+</div>

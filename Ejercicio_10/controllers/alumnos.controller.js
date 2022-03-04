@@ -2,15 +2,12 @@ angular.module("universidadApp").controller("alumnosCtrl", ["$scope", "$http", f
     $scope.alumnos = [];
     $scope.position = 5;
 
-    $http.get('http://localhost:4000/api/alumnos').then(function(response){
+    $http.get('http://localhost:4000/api/alumnos').then(function(response){        
         $scope.alumnos = response.data.data;
     });
     
     $scope.prevPage = function(){ $scope.position = $scope.position - 5; };
-    $scope.nextPage = function(){
-        console.log("asdsad");
-        $scope.position = $scope.position + 5;
-    };
+    $scope.nextPage = function(){ $scope.position = $scope.position + 5; };
 
     $scope.hasDisabled = function(direction){
         let condition;
@@ -22,4 +19,19 @@ angular.module("universidadApp").controller("alumnosCtrl", ["$scope", "$http", f
 
         return !condition;
     };
+}]);
+
+angular.module("universidadApp").controller("alumnosDetailCtrl", ["$scope", "$http", "$routeParams", "$location", function($scope, $http, $routeParams, $location){
+    $scope.alumno = {};
+
+    $http.get(`http://localhost:4000/api/alumnos/${$routeParams._id}`).then(function(response){
+        $scope.alumno = response.data.data;
+        if(!$scope.alumno) $location.path('/alumnos');
+    }).catch(function(){
+
+    })
+
+    $scope.submit = function(a){
+        $location.path('/alumnos');
+    }
 }]);

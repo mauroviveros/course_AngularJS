@@ -11,6 +11,7 @@
                 <th scope="col" class="text-center">Nombre</th>
                 <th scope="col" class="text-center">Teléfono</th>
                 <th scope="col" class="text-center">Dirección</th>
+                <th scope="col" class="text-center"></th>
             </tr>
             </thead>
             <tbody>
@@ -19,6 +20,9 @@
                 <td>{{ alumno.nombre }}</td>
                 <td class="text-center">{{ alumno.telefono  | telefono }}</td>
                 <td>{{ alumno.direccion }}</td>
+                <td>
+                    <a ng-href="#!/alumnos/{{ alumno._id }}" class="btn btn-sm btn-link">Ver Alumno</a>
+                </td>
             </tr>
             </tbody>
         </table>
