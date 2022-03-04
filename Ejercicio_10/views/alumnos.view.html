@@ -24,7 +24,7 @@
                 <th scope="row" class="text-center">{{ alumno._id }}</th>
                 <td>{{ alumno.nombre }}</td>
                 <td class="text-center">{{ alumno.telefono  | telefono }}</td>
-                <td>{{ alumno.direccion }}</td>
+                <td class="text-truncate">{{ alumno.direccion }}</td>
                 <td>
                     <a ng-href="#!/alumnos/{{ alumno._id }}" class="btn btn-sm btn-link">Ver Alumno</a>
                 </td>
