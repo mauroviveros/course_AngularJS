@@ -1,3 +1,26 @@
-<h1>Alumnos</h1>
-<h4>Esta es la pagina para Alumnos</h4>
-<hr>
+<div class="container">
+    <h1>Alumnos</h1>
+    <h4>Esta es la pagina para Alumnos</h4>
+    <hr>
+
+    <div class="table-responsive">
+        <table class="table table-striped">
+            <thead>
+            <tr>
+                <th scope="col" class="text-center">#</th>
+                <th scope="col" class="text-center">Nombre</th>
+                <th scope="col" class="text-center">Teléfono</th>
+                <th scope="col" class="text-center">Dirección</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr ng-repeat="alumno in alumnos">
+                <th scope="row" class="text-center">{{ alumno._id }}</th>
+                <td>{{ alumno.nombre }}</td>
+                <td class="text-center">{{ alumno.telefono  | telefono }}</td>
+                <td>{{ alumno.direccion }}</td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

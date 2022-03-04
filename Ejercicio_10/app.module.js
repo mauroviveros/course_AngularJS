@@ -14,3 +14,9 @@ app.config(["$routeProvider", function($routeProvider){
 
     $routeProvider.otherwise({ redirectTo: '/' });
 }]);
+
+app.filter("telefono", [function(){
+    return function(number){
+        return `${number.substring(0, 4)}-${number.substring(4)}`
+    }
+}]);
