@@ -1,3 +1,9 @@
+#### 0.3.1 (2022-03-04)
+
+##### Other Changes
+
+* Add sweetalert2 ([d3cf19c7](https://github.com/maurodviveros/course_AngularJS/commit/d3cf19c790eed4101506a91f6a7261739c31c5d9))
+
 ### 0.3.0 (2022-03-04)
 
 ##### Build System / Dependencies
