@@ -1,11 +1,14 @@
 'use strict';
 
 const express = require('express');
+const bodyParser = require('body-parser');
 const APP = express();
 
 const univerapp_routes = require('./univerapp/routes');
 
-// Add headers before the routes are defined
+APP.use(bodyParser.urlencoded({ extended: false }))
+APP.use(bodyParser.json())
+
 APP.use(function (req, res, next){
     res.setHeader('Access-Control-Allow-Origin', '*');
     res.setHeader('Access-Control-Allow-Methods', 'GET, POST, OPTIONS, PUT, PATCH, DELETE');
