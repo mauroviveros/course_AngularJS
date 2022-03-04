@@ -14,7 +14,7 @@
             </tr>
             </thead>
             <tbody>
-            <tr ng-repeat="alumno in alumnos">
+            <tr ng-repeat="alumno in alumnos | limitTo:position | limitTo:-5">
                 <th scope="row" class="text-center">{{ alumno._id }}</th>
                 <td>{{ alumno.nombre }}</td>
                 <td class="text-center">{{ alumno.telefono  | telefono }}</td>
@@ -23,4 +23,8 @@
             </tbody>
         </table>
     </div>
+    <div class="d-grid gap-2 d-md-block">
+        <button class="btn btn-primary" type="button" ng-class="{ 'disabled': hasDisabled('prev') }" ng-click="prevPage()">Anterior</button>
+        <button class="btn btn-primary" type="button" ng-class="{ 'disabled': hasDisabled('next') }" ng-click="nextPage();">Siguiente</button>
+      </div>
 </div>
