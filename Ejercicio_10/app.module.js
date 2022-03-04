@@ -5,11 +5,12 @@ app.config(["$routeProvider", function($routeProvider){
         templateUrl: './views/home.view.html'
     });
     $routeProvider.when('/alumnos', {
-        templateUrl: './views/alumnos.view.html'
+        templateUrl: './views/alumnos.view.html',
+        controller: 'alumnosCtrl'
     });
     $routeProvider.when('/profesores', {
         templateUrl: './views/profesores.view.html'
     });
 
-    // $routeProvider.otherwise({ redirectTo: '/' });
+    $routeProvider.otherwise({ redirectTo: '/' });
 }]);

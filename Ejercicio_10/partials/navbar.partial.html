@@ -6,14 +6,8 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#!">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#!/alumnos">Alumnos</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#!/profesores">Profesores</a>
+                <li class="nav-item" ng-repeat="page in navbarMenu">
+                    <a class="nav-link" ng-class="{ 'active': page.active }" aria-current="page" ng-href="{{ page.url }}">{{ page.nombre }}</a>
                 </li>
             </ul>
         </div>
