@@ -1,3 +1,31 @@
+### 0.3.0 (2022-03-04)
+
+##### Build System / Dependencies
+
+* Se agrega angular-ui-mask ([cdcc3442](https://github.com/maurodviveros/course_AngularJS/commit/cdcc34425eed8a292d7f5fb049548024ccf99412))
+
+##### New Features
+
+* 43. Sweet Alert ([75195a68](https://github.com/maurodviveros/course_AngularJS/commit/75195a683d368ea832f7540c2a877a72b2e98ef8))
+* 42. ngTouch ([9d30306d](https://github.com/maurodviveros/course_AngularJS/commit/9d30306d8f1a0e31b7520bc0f10b78888a4a6fec))
+* 38. Insertar en base de datos ([b15d143d](https://github.com/maurodviveros/course_AngularJS/commit/b15d143da07b964f9ed68aade6b556c072e7e51e))
+* 37. Haciendo Posteo de información - Guardar datos via Ajax ([4a7a196b](https://github.com/maurodviveros/course_AngularJS/commit/4a7a196b007b6d947f2c9fab4116e7ad3a6edfb8))
+* 35. RouteParams - Parametros de Ruta ([fdd54f99](https://github.com/maurodviveros/course_AngularJS/commit/fdd54f991da0a2396a6011e66dc4853dadab2106))
+* 34. Tabla dinamica parte 2 ([52fd91d3](https://github.com/maurodviveros/course_AngularJS/commit/52fd91d35ff4dede56780c53a83876b8d6ab9dc2))
+* 33. Creando nuestra primera tabla dinámica y filtro personalizado ([236bc86d](https://github.com/maurodviveros/course_AngularJS/commit/236bc86d922ac0425e629b2c437d5a5d10f7a797))
+
+##### Bug Fixes
+
+* Backend ([52b5b703](https://github.com/maurodviveros/course_AngularJS/commit/52b5b7039c5ccdb50e72906a165bdfabb74c7dc5))
+* Correccion en backend ([1f4373d6](https://github.com/maurodviveros/course_AngularJS/commit/1f4373d68d669e425f76795fbc230c012a786f89))
+
+##### Other Changes
+
+* Add bodyParser in backend ([c5e5012a](https://github.com/maurodviveros/course_AngularJS/commit/c5e5012a6a9533149b03e759330026793b6491bc))
+*  Mascaras para tus campos de texto ([71643c1e](https://github.com/maurodviveros/course_AngularJS/commit/71643c1ef5fffdd01988b0801cedecfdc2b1a1e5))
+* Se corrige backend ([4000d610](https://github.com/maurodviveros/course_AngularJS/commit/4000d61076db9846065a4d3e2d9d620b56ba8995))
+* Add Backend test Server ([28e60b5b](https://github.com/maurodviveros/course_AngularJS/commit/28e60b5b6c86dc6856940a7e23aaf142c65299e0))
+
 #### 0.2.1 (2022-03-04)
 
 ##### New Features
