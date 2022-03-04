@@ -1,3 +1,28 @@
+### 0.2.0 (2022-03-04)
+
+##### Build System / Dependencies
+
+* Se agrega ng-route ([8a9298ab](https://github.com/maurodviveros/course_AngularJS/commit/8a9298ab25b9af42e644315b46f7deafedb27e98))
+*  Se agrega documentacion usage al README ([dc4ed5eb](https://github.com/maurodviveros/course_AngularJS/commit/dc4ed5ebc598453e0bb48f4133cc73281481a5da))
+
+##### New Features
+
+* 27. Api Externa - Clima en el Mundo27. Api Externa - Clima en el Mundo ([4f673778](https://github.com/maurodviveros/course_AngularJS/commit/4f67377853f39f7a020bfd5c31eaa109692d55b0))
+* 26. Detectando IPs, Pais, Ciudad y demás información Online ([97fb324f](https://github.com/maurodviveros/course_AngularJS/commit/97fb324fcd5defefc36f8ddae3c90a4b77e96b5c))
+* 25. ng-include ([a44aabcc](https://github.com/maurodviveros/course_AngularJS/commit/a44aabcc55c2260a2dc9d4850b109c09b38860a8))
+* 21. $http - request ([0a7fe190](https://github.com/maurodviveros/course_AngularJS/commit/0a7fe190512fa05f39ff5fdcd8ca151bb5745b74))
+
+##### Bug Fixes
+
+* coreccion en title de la actividad 7 ([07153322](https://github.com/maurodviveros/course_AngularJS/commit/071533229ccf0c82eb76415c9a5d4d611910b024))
+* Se borra espacios ([ef54ef10](https://github.com/maurodviveros/course_AngularJS/commit/ef54ef106e44f402137a2f9622e6835ddea0f682))
+* Correción en title de los html files ([308ab848](https://github.com/maurodviveros/course_AngularJS/commit/308ab848ec78e5d8d5ad3180b409aba01a572722))
+
+##### Other Changes
+
+* Se agrega index principal de Indice de todas las actividades ([5cc75caf](https://github.com/maurodviveros/course_AngularJS/commit/5cc75caf0e8f95e68de3f2b73c67d07b0980242b))
+* Se corrige los numeros de ejercicios ([54c849f0](https://github.com/maurodviveros/course_AngularJS/commit/54c849f01b1a9fffedfece5da58d9dd82b1daa1d))
+
 ### 0.1.0 (2022-03-03)
 
 ##### Build System / Dependencies
