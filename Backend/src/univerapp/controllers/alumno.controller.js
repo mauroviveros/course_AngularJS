@@ -76,7 +76,7 @@ const upsertAlumno = async(req, res)=>{
     if(!!body.nombre) body.nombre = body.nombre.toUpperCase();
 
     try{
-        if(_.isUndefined(_id)) id = (await Alumno.countDocuments() + 1);
+        if(_.isUndefined(_id) || _id == 'nuevo') _id = (await Alumno.countDocuments() + 1);
         let alumno = await Alumno.findOneAndUpdate({ _id }, body, { upsert: true });
 
         let _res = { code: 200, message: "OK", data: alumno };
