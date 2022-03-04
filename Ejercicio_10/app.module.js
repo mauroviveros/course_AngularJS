@@ -1,4 +1,4 @@
-var app = angular.module("universidadApp", ["ngRoute"]);
+var app = angular.module("universidadApp", ["ngRoute", "ui.mask"]);
 
 app.config(["$routeProvider", function($routeProvider){
     $routeProvider.when('/', {
