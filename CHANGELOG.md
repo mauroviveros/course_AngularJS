@@ -1,3 +1,9 @@
+#### 0.2.1 (2022-03-04)
+
+##### New Features
+
+* 30. ng-route ([e9738696](https://github.com/maurodviveros/course_AngularJS/commit/e97386963833ee211a99d81594ee268ee7fd6053))
+
 ### 0.2.0 (2022-03-04)
 
 ##### Build System / Dependencies
