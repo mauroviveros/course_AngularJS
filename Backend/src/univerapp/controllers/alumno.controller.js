@@ -50,7 +50,7 @@ const getAlumno = async(req, res)=>{
     try{
         let alumno = await Alumno.findOne({ _id });
 
-        if(!alumno) throw { code: 404, message: "No existe ese Alumno" };
+        if(!alumno) throw { code: 204, message: "No existe ese Alumno", data: {} };
 
         let _res = { code: 200, message: "OK", data: alumno };
 
