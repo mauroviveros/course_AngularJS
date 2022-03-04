@@ -8,14 +8,14 @@
 
 ## Requirements
 
-```node
+```bash
 $ npm i -g generate-changelog
 $ npm i -g bower
 ```
 
 ## Usage
 
-```node
+```bash
 $ bower install
 ```
 

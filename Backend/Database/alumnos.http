@@ -1,0 +1,8 @@
+### Obtengo todos los alumnos sin config
+GET http://localhost:4000/api/alumnos
+
+
+### Obtengo todos los alumnos con paginación
+# pageSize  = Limite del listado
+# page      = Numero de Pagina
+GET http://localhost:4000/api/alumnos?pageSize=5

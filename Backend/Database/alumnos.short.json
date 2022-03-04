@@ -1,0 +1,38 @@
+[
+    {
+      "_id": 1,
+      "nombre": "FERNANDO HERRERA SORIANO",
+      "telefono": "99498877",
+      "direccion": "Colonia el porvenir, cerca del cerro Juana Mendoza."
+    },
+    {
+      "_id": 2,
+      "nombre": "MELISSA FLORES HERRERA",
+      "telefono": "98883322",
+      "direccion": "Provincia de aguas calientes, frente al mercadito los tres hermanos."
+    },
+    {
+      "_id": 3,
+      "nombre": "HERNANDO RENE VALLEJO",
+      "telefono": "33223323",
+      "direccion": "Departamento Ascapotzalco, por la estacion del metro."
+    },
+    {
+      "_id": 4,
+      "nombre": "MARIA PEREZ SOLANO",
+      "telefono": "33229988",
+      "direccion": "Barranquilla, contiguo a la universidad."
+    },
+    {
+      "_id": 5,
+      "nombre": "ROSA JIMENEZ PEREIRA",
+      "telefono": "33221243",
+      "direccion": "No tiene direccion"
+    },
+    {
+      "_id": 6,
+      "nombre": "JUAN CARLOS PINEDA",
+      "telefono": "77435434",
+      "direccion": "No tiene direccion"
+    }
+]

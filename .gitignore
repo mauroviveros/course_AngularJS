@@ -1,1 +1,3 @@
 bower_components
+Backend/node_modules
+Backend/.env
