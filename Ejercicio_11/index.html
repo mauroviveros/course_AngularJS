@@ -23,16 +23,12 @@
                         <label for="nombre">Nombre<span class="text-primary">*</span></label>
                         <input type="text" class="form-control" name="nombre" id="nombre" placeholder="Ingrese su Nombre..." ng-model="formData.nombre" required>
                         <div class="invalid-feedback" ng-if="testForm.nombre.$error.required">Este campo es requerido</div>
-                        <!-- aria-describedby="nameHelp" -->
-                        <!-- <small id="nameHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
                     </div>
 
                     <div class="mb-3">
                         <label for="edad">Edad</label>
                         <input type="number" class="form-control" name="edad" id="edad" placeholder="Ingrese su Edad..." ng-model="formData.edad">
                         <div class="invalid-feedback" ng-if="testForm.edad.$error.required">Este campo es requerido</div>
-                        <!-- aria-describedby="nameHelp" -->
-                        <!-- <small id="nameHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
                     </div>
 
                     <div class="mb-3">
@@ -50,8 +46,6 @@
                         <input type="email" class="form-control" name="email" id="email" placeholder="Ingrese su Email..." ng-model="formData.email" required>
                         <div class="invalid-feedback" ng-if="testForm.email.$error.required">Este campo es requerido</div>
                         <div class="invalid-feedback" ng-if="testForm.email.$error.email">No tiene formato de correo.</div>
-                        <!-- aria-describedby="nameHelp" -->
-                        <!-- <small id="nameHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
                     </div>
 
                     <button class="btn btn-primary" type="submit">Submit form</button>
