@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html ng-app="bonusApp">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 11</title>
+
+    <link rel="stylesheet" href="./../bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./../bower_components/animate.css/animate.css">
+    <script src="./../bower_components/angular/angular.min.js"></script>
+    <script src="./app.module.js"></script>
+</head>
+<body ng-controller="mainCtrl">
+    <div class="container">
+        <h1>Formularios</h1>
+        <hr>
+
+        <div class="row">
+            <div class="col-md-7">
+                <form name="testForm" class="needs-validation" ng-class="{ 'was-validated': testForm.$submitted }" ng-submit="guardar_datos(testForm);" novalidate>
+                    <div class="mb-3">
+                        <label for="nombre">Nombre<span class="text-primary">*</span></label>
+                        <input type="text" class="form-control" name="nombre" id="nombre" placeholder="Ingrese su Nombre..." ng-model="formData.nombre" required>
+                        <div class="invalid-feedback" ng-if="testForm.nombre.$error.required">Este campo es requerido</div>
+                        <!-- aria-describedby="nameHelp" -->
+                        <!-- <small id="nameHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="edad">Edad</label>
+                        <input type="number" class="form-control" name="edad" id="edad" placeholder="Ingrese su Edad..." ng-model="formData.edad">
+                        <div class="invalid-feedback" ng-if="testForm.edad.$error.required">Este campo es requerido</div>
+                        <!-- aria-describedby="nameHelp" -->
+                        <!-- <small id="nameHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="genero">Género<span class="text-primary">*</span></label>
+                        <select class="form-select" name="genero" id="genero" ng-model="formData.genero" required>
+                          <option value="" disabled >Seleccione un género</option>
+                          <option value="H">Hombre</option>
+                          <option value="M">Mujer</option>
+                        </select>
+                        <div class="invalid-feedback" ng-if="testForm.genero.$error.required">Este campo es requerido</div>
+                      </div>
+
+                    <div class="mb-3">
+                        <label for="email">Email<span class="text-primary">*</span></label>
+                        <input type="email" class="form-control" name="email" id="email" placeholder="Ingrese su Email..." ng-model="formData.email" required>
+                        <div class="invalid-feedback" ng-if="testForm.email.$error.required">Este campo es requerido</div>
+                        <div class="invalid-feedback" ng-if="testForm.email.$error.email">No tiene formato de correo.</div>
+                        <!-- aria-describedby="nameHelp" -->
+                        <!-- <small id="nameHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
+                    </div>
+
+                    <button class="btn btn-primary" type="submit">Submit form</button>
+                    <input type="submit" class="btn btn-primary" value="Guardar">
+                </form>
+            </div>
+            <div class="col-md-5">
+                <label>Estructura de datos</label>
+                <pre>{{ testForm | json }}</pre>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>
+
+
