@@ -1,3 +1,17 @@
+## 1.0.0 (2022-03-07)
+
+##### New Features
+
+* 50. Observadores - $scope.$watch ([407e91da](https://github.com/maurodviveros/course_AngularJS/commit/407e91da606836973844fcc64c4deae7da30397e))
+* 47. Promesas ([a3b1ce07](https://github.com/maurodviveros/course_AngularJS/commit/a3b1ce074cc4601bcbd6a0348e1fa3d4bcd40156))
+* 44. Enlazando campos a un objeto del Scope. ([ab1042e2](https://github.com/maurodviveros/course_AngularJS/commit/ab1042e29449b206ee860498acc672997944195e))
+
+##### Bug Fixes
+
+* Bower dependencies ([4a496fda](https://github.com/maurodviveros/course_AngularJS/commit/4a496fdafa3b927956bc6ba3f91cd076607e43f9))
+* Update bootstrap v5 ([ee7d9b8c](https://github.com/maurodviveros/course_AngularJS/commit/ee7d9b8c3fbb3b413ac6b2bd81f245886f93a1e4))
+* Se agrega link a bonus02" ([1659e6a4](https://github.com/maurodviveros/course_AngularJS/commit/1659e6a49108ec539bc5b7a41ab5fd6d64a43068))
+
 #### 0.3.1 (2022-03-04)
 
 ##### Other Changes
