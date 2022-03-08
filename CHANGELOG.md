@@ -1,3 +1,9 @@
+#### 1.0.3 (2022-03-08)
+
+##### Other Changes
+
+* Se cambia el nombre del package.json ([d06159cb](https://github.com/maurodviveros/course_AngularJS/commit/d06159cb6968278766ad8c88a81b675b6fdb04c1))
+
 #### 1.0.2 (2022-03-08)
 
 ##### Other Changes
