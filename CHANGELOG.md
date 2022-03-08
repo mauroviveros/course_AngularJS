@@ -1,3 +1,9 @@
+#### 1.0.2 (2022-03-08)
+
+##### Other Changes
+
+* Se remueve  gitattributes ([ce06dd00](https://github.com/maurodviveros/course_AngularJS/commit/ce06dd00ff8bb39e7d79b2bc6bdb9226ec0f8494))
+
 #### 1.0.1 (2022-03-08)
 
 ##### Other Changes
