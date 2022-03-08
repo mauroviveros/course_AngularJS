@@ -1,3 +1,9 @@
+#### 1.0.1 (2022-03-08)
+
+##### Other Changes
+
+* Se agrega gitattributes ([c73be99e](https://github.com/maurodviveros/course_AngularJS/commit/c73be99e1edc10ea0297ca167cb52cc74db71ff3))
+
 ## 1.0.0 (2022-03-07)
 
 ##### New Features
