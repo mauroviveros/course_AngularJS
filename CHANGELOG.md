@@ -1,3 +1,9 @@
+#### 1.0.5 (2022-05-14)
+
+##### Bug Fixes
+
+* update vscode settings ([38b7fe21](https://github.com/maurodviveros/course_AngularJS/commit/38b7fe21128a354e611abb8c9698a1afad959e77))
+
 #### 1.0.4 (2022-05-14)
 
 ##### Bug Fixes
