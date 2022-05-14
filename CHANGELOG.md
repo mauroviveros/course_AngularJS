@@ -1,3 +1,9 @@
+#### 1.0.4 (2022-05-14)
+
+##### Bug Fixes
+
+* add .vscode config ([e4b1df9e](https://github.com/maurodviveros/course_AngularJS/commit/e4b1df9e17c9dc7524e4613916654aff25f1e873))
+
 #### 1.0.3 (2022-03-08)
 
 ##### Other Changes
