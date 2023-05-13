@@ -1,3 +1,14 @@
+## [1.0.6](https://github.com/maurodviveros/course_AngularJS/compare/v1.0.5...v1.0.6) (2023-05-13)
+
+
+### Features
+
+* :package: update package.json ([076acea](https://github.com/maurodviveros/course_AngularJS/commit/076acea359df3b2105780f0cf79a6f6a3da13473))
+* :see_no_evil: ignore node_modules ([8c2bc1c](https://github.com/maurodviveros/course_AngularJS/commit/8c2bc1cd2d03c7965f776f3d2697a8c0aeca4b26))
+* :wheelchair: better html HUB ([1a2f5d9](https://github.com/maurodviveros/course_AngularJS/commit/1a2f5d9cc183dfb62d16a526964bc0d08993ef38))
+
+
+
 #### 1.0.5 (2022-05-14)
 
 ##### Bug Fixes

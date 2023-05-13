@@ -2,7 +2,7 @@
   "name": "course_angularjs",
   "description": "AngularJS - Desde Hola Mundo hasta una Aplicación (legacy)",
   "author": "Mauro Daniel Viveros <maurod.viveros@gmail.com> (TRY Ubbe)",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "license": "MIT",
   "scripts": {
     "start": "live-server",
